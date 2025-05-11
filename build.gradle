@@ -1,11 +1,14 @@
 buildscript {
     repositories {
         jcenter()
+        //阿里云中央仓库public仓：central和jcenter的聚合仓库(使用阿里云的仓库，下载速度更快、更稳定)
+        maven { url 'https://maven.aliyun.com/repository/public' }
         google()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.android.tools.build:gradle:7.0.2'
+
     }
 }
 
@@ -13,5 +16,8 @@ allprojects {
     repositories {
         jcenter()
         google()
+        mavenCentral()
+        //阿里云中央仓库public仓：central和jcenter的聚合仓库(使用阿里云的仓库，下载速度更快、更稳定)
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
 }
